@@ -156,5 +156,4 @@ class TitleViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         if self.request.method in ['GET']:
             return TitleSerializer
-        else:
-            return TitleCreateSerializer
+        return TitleCreateSerializer

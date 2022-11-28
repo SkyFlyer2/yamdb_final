@@ -22,9 +22,10 @@ jobs:
 
     - name: Test with flake8 and django tests
       run: |
-        #cd api_yamdb
+        cd api_yamdb
         python -m flake8
         #<корневая_папка_infra_actions>/<папка_проекта>/manage.py
+        cd ..
         pytest
         #python manage.py test
 

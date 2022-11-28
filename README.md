@@ -1,4 +1,5 @@
 # API YaMDB
+![yamdb_workflow](https://github.com/SkyFlyer2/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 Сервис  "YaMDB" - портал о фильмах, книгах и музыке, где пользователи могут оценивать и комментировать произведения.
 Создано в рамках курса Яндекс.Практикум.

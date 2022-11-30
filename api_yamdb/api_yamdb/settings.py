@@ -7,8 +7,8 @@ load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
-
+SECRET_KEY = str(os.getenv('SECRET_KEY'), default='***')
+print('SECRET_KEY=', SECRET_KEY)
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
@@ -70,6 +70,7 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', default='5432')
     }
 }
+print('DB_ENGINE=', os.getenv('DB_ENGINE'))
 
 AUTH_PASSWORD_VALIDATORS = [
     {

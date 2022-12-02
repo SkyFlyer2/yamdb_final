@@ -77,7 +77,7 @@ jobs:
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
             # sudo docker-compose up -d
             #sudo docker-compose up -d --build 
-            sudo docker-compose up --detach --build --force-recreate web
+            sudo docker-compose up --detach --build --force-recreate
             # sudo docker-compose up --force-recreate -d web
             sudo docker-compose exec -T web python3 manage.py makemigrations
             sudo docker-compose exec -T web python3 manage.py migrate

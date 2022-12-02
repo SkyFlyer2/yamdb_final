@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = str(os.getenv('SECRET_KEY', default='***'))
+SECRET_KEY = str(os.getenv('SECRET_KEY', default='*'))
 
 DEBUG = False
 
@@ -116,7 +116,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
